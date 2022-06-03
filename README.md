@@ -10,7 +10,8 @@ Elastic Compute Cloud Web Services ( EC2 ), wich basically are virtual machines 
  * Schema of the AWS structure:
  
 
-![schema](https://user-images.githubusercontent.com/82456534/171851084-bf2e5dc4-a468-4443-a27b-aec88a5589f7.png)
+![schema](https://user-images.githubusercontent.com/82456534/171965151-398130a3-283f-4913-9e92-50c1f7a89b79.png)
+
 
 
 
@@ -56,4 +57,6 @@ Elastic Compute Cloud Web Services ( EC2 ), wich basically are virtual machines 
    10) Open a new Linux terminal and enter : ssh -i <YOUR AWS KEY> ubuntu@<office4_ec2 public ip> and hit enter
    11) You re now connected to the Office4 Ec2
    12) To check communication with private EC2's, you will need to check their private IP's on AWS, and enter the command $ping <private_ip> on your console
+   13) To check ssh from the public EC2 to any private one, you must save your KP.pem inside the public EC2 first; then ( logged in the public EC2 ) type the
+       command ssh -i <YOUR AWS KEY> ubuntu@<private_ec2_ip> and hit enter.
    
