@@ -48,10 +48,11 @@ Elastic Compute Cloud Web Services ( EC2 ), wich basically are virtual machines 
    2) Open the folder with Visual Studio
    3) Clone this Repository
    4) Reopen the project in the Container when VStudio prompt for it
-   5) Open a new terminal, and enter the command: $Terraform apply mgmain.tfplan  ( The project structure will be created in AWS )
-   6) Log in to AWS, you can now see a VPC named mgmain has been created, check for the office4_ec2 public ip
-   7) Move to the folder where your AWS Credentials are ( KP.pem file )
-   8) Open a new Linux terminal and enter : ssh -i <YOUR AWS KEY> ubuntu@<office4_ec2 public ip> and hit enter
-   9) You re now connected to the Office4 Ec2
-   10) To check communication with private EC2's, you will need to check their private IP's on AWS, and enter the command $ping <private_ip> on your console
+   5) Open a new terminal, and enter the command: $Terraform plan -out mgmain.tfplan
+   6) Enter the command: $Terraform apply mgmain.tfplan  ( The project structure will be created in AWS )
+   7) Log in to AWS, you can now see a VPC named mgmain has been created, check for the office4_ec2 public ip
+   8) Move to the folder where your AWS Credentials are ( KP.pem file )
+   9) Open a new Linux terminal and enter : ssh -i <YOUR AWS KEY> ubuntu@<office4_ec2 public ip> and hit enter
+   10) You re now connected to the Office4 Ec2
+   11) To check communication with private EC2's, you will need to check their private IP's on AWS, and enter the command $ping <private_ip> on your console
    
